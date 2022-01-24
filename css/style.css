@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+  box-sizing: border-box;
+  
+}
+
+header,
+section {
+  overflow-x: hidden;
+
+}
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+  --image-bg: url(../assets/Nigeria.jpg);
+}
+
+header a {
+  font-family: var(--Sniglet-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+
+
+header {
+  background: blue;
+  /* fallback for old browsers */
+  background: var(--image-bg);
+  background-size: cover;
+}
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: floralwhite;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-menu a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+header .nav-item:last-child {
+  padding-right: 10.5em;
+}
+header .nav-item {
+  background-color: white;
+  padding: 0.9em;
+}
+
+header .navbar-brand {
+  background-color: white;
+  padding-left: 0rem;
+}
+header .nav-item dropdown:hover {
+  color: black;
+}
+header .nav-link dropdown-toggle:hover {
+  color: black;
+}
+
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 30vmin;
+  font-weight: bold;
+  color: white;
+}
+
+header .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+header .container .col-md-7 h6 {
+  padding: 1vmin;
+  letter-spacing: 4px;
+}
+header .container .col-md-7 h2 {
+  font-size: 8.5vmin;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 0.1em 0em;
+}
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+  color: whitesmoke;
+}
+.primary-btn {
+  opacity: 0.9;
+  color:black;
+  border: radius 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/********** section 1 **************/
+.section-1 {
+  padding: 10vmin 0vmin;
+  background-color:white;
+  box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.1);
+  max-height: 100vh;
+
+}
+.section-1 .row .col-md-6:last-child {
+  position: relative;
+}
+.section-1 .row .col-md-6 .h1 {
+  font-weight: 200em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  padding: 0.4em 0;
+  font-size: 5em;
+  opacity: 0.5;
+}
+.section-1 .row .col-md-6 .p {
+  font-size: 3em;
+  color: rgba(0, 0, 0, 0.5);
+  
+}
+
+/* Section 2Team */
+.section-2{
+  background-color:rgba(221, 221, 221, 0.685) ;
+}
+
+.section-2 .container h1 {
+  font-size: 6vmin;
+  padding-top: 14vmin;
+  
+}
+.section-2 .team {
+  padding: 10vmin 4vmin;
+
+}
+.section-2 .card {
+  width: 22em;
+  margin-top: 10vmin;
+}
+.section-2 .card .card-text {
+  padding: 0.5em;
+   opacity: 0.4;
+}
+.section-2 .card-body > a {
+  font-size: 10.5em;
+}
+.border-radius {
+  border-radius: 340px;
+  width: 40%;
+}
+/* Section 3 */
+
+.section-3 {
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: rgba(255, 246, 192, 0.979);
+}
+.section-3 .col-md-12 > h1 {
+  padding: 2em 0 0.5em 0;
+  color: black;
+  font-size: 6vmin;
+}
+.section-3 .col-md-12 > p {
+  padding: 0 4em;
+  padding-bottom: 2em;
+  color: rgb(38, 0, 255);
+  font-size: 3vmin;
+}
+.section-3 .desktop {
+  background: white;
+  display: inline-block;
+  border-radius: 3em;
+  padding: 2vmin 4.5vmin;
+  margin: 1em;
+}
+.section-3 .desktop h3 {
+  font-size: 4vmin;
+}
+
+.section-3 .desktop p {
+  font-size: 2vmin;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.986);
+  overflow-x: hidden;
+  padding: 14vmin 18vmin;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+}
+
+footer .column i {
+  color: #dd2476;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease;
+}
